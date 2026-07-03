@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Buy Vehicles — Vahana.lk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <div class="logo"><a href="index.html"><i class="fas fa-car"></i> Vahana<span>.lk</span></a></div>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html" class="active">Buy</a></li>
+                    <li><a href="rentals.html">Rent</a></li>
+                    <li><a href="hire.html">Hire</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="nav-cta"><i class="fas fa-user"></i> Sign In</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Buy Vehicles</h1>
+            <p>Find quality used and new cars, bikes, and vans from verified sellers.</p>
+        </div>
+    </section>
+
+    <section class="vehicles-section">
+        <div class="container">
+            <div class="filter-bar">
+                <select><option>All Locations</option><option>Colombo</option><option>Kandy</option><option>Galle</option></select>
+                <select><option>All Brands</option><option>Toyota</option><option>Honda</option><option>Nissan</option><option>BMW</option></select>
+                <input type="text" placeholder="Min Price" style="width:100px;" />
+                <input type="text" placeholder="Max Price" style="width:100px;" />
+                <button class="btn btn-primary" style="padding:0.5rem 1.5rem;">Filter</button>
+            </div>
+
+            <div class="vehicle-grid">
+                <!-- Card 1 -->
+                <div class="vehicle-card" data-name="Toyota Vitz 2020" data-price="4250000">
+    <img src="img/toyotavista.jpg" alt="Toyota" />
+    <div class="vehicle-body">
+        <h3>Toyota Vitz 2020</h3>
+        <div class="price">Rs. 4,250,000</div>
+        <div class="specs"><span><i class="fas fa-gas-pump"></i> Petrol</span><span><i class="fas fa-road"></i> 45k km</span><span><i class="fas fa-calendar"></i> 2020</span></div>
+        <div class="seller-info">
+            <div class="seller-detail"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="seller" /><span>Nuwan P.</span></div>
+            <div class="location"><i class="fas fa-map-marker-alt"></i> Colombo</div>
+        </div>
+        <a href="#" class="btn btn-outline-green"><i class="fas fa-phone"></i> Call Seller</a>
+        <button class="btn btn-calc emi-trigger"><i class="fas fa-calculator"></i> EMI Calculator</button>
+    </div>
+</div>
+               
+                <!-- Card 2 -->
+               <div class="vehicle-card" data-name="Honda CR-V 2022" data-price="8750000">
+    <img src="img/hondacrv.jpg" alt="Honda" />
+    <div class="vehicle-body">
+        <h3>Honda CR-V 2022</h3>
+        <div class="price">Rs. 8,750,000</div>
+        <div class="specs"><span><i class="fas fa-gas-pump"></i> Diesel</span><span><i class="fas fa-road"></i> 28k km</span><span><i class="fas fa-calendar"></i> 2022</span></div>
+        <div class="seller-info">
+            <div class="seller-detail"><img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="seller" /><span>Shanika F.</span></div>
+            <div class="location"><i class="fas fa-map-marker-alt"></i> Kandy</div>
+        </div>
+        <a href="#" class="btn btn-outline-green"><i class="fas fa-phone"></i> Call Seller</a>
+        <button class="btn btn-calc emi-trigger"><i class="fas fa-calculator"></i> EMI Calculator</button>
+    </div>
+</div>
+                <!-- Card 3 -->
+                <div class="vehicle-card" data-name="BMW X5 2021" data-price="16200000">
+    <img src="img/bmwx5.webp" alt="BMW" />
+    <div class="vehicle-body">
+        <h3>BMW X5 2021</h3>
+        <div class="price">Rs. 16,200,000</div>
+        <div class="specs"><span><i class="fas fa-gas-pump"></i> Diesel</span><span><i class="fas fa-road"></i> 15k km</span><span><i class="fas fa-calendar"></i> 2021</span></div>
+        <div class="seller-info">
+            <div class="seller-detail"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="seller" /><span>Lasitha R.</span></div>
+            <div class="location"><i class="fas fa-map-marker-alt"></i> Galle</div>
+        </div>
+        <a href="#" class="btn btn-outline-green"><i class="fas fa-phone"></i> Call Seller</a>
+        <button class="btn btn-calc emi-trigger"><i class="fas fa-calculator"></i> EMI Calculator</button>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EMI Calculator Modal ===== -->
+    <div class="modal-overlay" id="emiModal">
+        <div class="modal-card">
+            <button class="modal-close" id="emiModalClose"><i class="fas fa-times"></i></button>
+            <div class="modal-header">
+                <h3><i class="fas fa-calculator" style="color:var(--green);"></i> <span id="emiVehicleName">EMI Calculator</span></h3>
+                <p>Estimate your monthly installment instantly</p>
+            </div>
+            <div class="modal-body">
+                <div class="emi-field">
+                    <div class="emi-field-label"><span>Vehicle Price (Rs.)</span><span class="emi-field-value" id="emiPriceVal">4,250,000</span></div>
+                    <input type="range" id="emiPrice" min="500000" max="20000000" step="50000" value="4250000" />
+                </div>
+                <div class="emi-field">
+                    <div class="emi-field-label"><span>Down Payment</span><span class="emi-field-value" id="emiDownVal">20%</span></div>
+                    <input type="range" id="emiDown" min="0" max="80" step="5" value="20" />
+                </div>
+                <div class="emi-field">
+                    <div class="emi-field-label"><span>Loan Tenure</span><span class="emi-field-value" id="emiTenureVal">5 years</span></div>
+                    <input type="range" id="emiTenure" min="1" max="8" step="1" value="5" />
+                </div>
+                <div class="emi-field">
+                    <div class="emi-field-label"><span>Interest Rate (Annual)</span><span class="emi-field-value" id="emiRateVal">12%</span></div>
+                    <input type="range" id="emiRate" min="6" max="20" step="0.5" value="12" />
+                </div>
+
+                <div class="emi-result">
+                    <div class="emi-amount">Rs. <span id="emiMonthly">0</span><small>/month</small></div>
+                    <div class="emi-sub">Estimated monthly installment</div>
+                </div>
+
+                <div class="emi-breakdown">
+                    <div class="emi-breakdown-item"><div class="label">Loan Amount</div><div class="value" id="emiLoanAmt">—</div></div>
+                    <div class="emi-breakdown-item"><div class="label">Total Interest</div><div class="value" id="emiInterest">—</div></div>
+                    <div class="emi-breakdown-item"><div class="label">Total Payable</div><div class="value" id="emiTotal">—</div></div>
+                </div>
+
+                <div class="emi-affordability" id="emiAfford" style="display:none;"></div>
+                <div class="emi-vs-rent" id="emiVsRent"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4><i class="fas fa-car" style="color:#0f9d58;"></i> Vahana.lk</h4><p>Your trusted vehicle marketplace in Sri Lanka.</p><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="vehicles.html">Buy Vehicles</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="hire.html">Hire a Ride</a></li><li><a href="#">Post Ad</a></li></ul></div>
+                <div class="footer-col"><h4>Support</h4><ul><li><a href="#">FAQ</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-phone" style="color:#0f9d58;width:1.5rem;"></i> +94 77 123 4567</li><li><i class="fas fa-envelope" style="color:#0f9d58;width:1.5rem;"></i> hello@vahana.lk</li><li><i class="fas fa-map-marker-alt" style="color:#0f9d58;width:1.5rem;"></i> Colombo, SL</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Vahana.lk. All rights reserved. Built with <i class="fas fa-heart"></i> for Sri Lankan drivers.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

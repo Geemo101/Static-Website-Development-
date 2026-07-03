@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Vahana.lk — Buy, Rent & Hire Vehicles in Sri Lanka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-car"></i> Vahana<span>.lk</span></a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="vehicles.html">Buy</a></li>
+                    <li><a href="rentals.html">Rent</a></li>
+                    <li><a href="hire.html">Hire</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="nav-cta"><i class="fas fa-user"></i> Sign In</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 3rem 0 4rem;">
+        <div class="container hero-content">
+            <h1 style="font-size: 2.8rem; font-weight: 800; color: #0f172a; margin-bottom: 0.5rem;">
+                Your vehicle journey <br /><span style="color: #0f9d58;">starts here.</span>
+            </h1>
+            <p style="font-size: 1.2rem; color: #475569; max-width: 600px; margin: 0 auto 2.5rem;">
+                Buy your dream car, rent for a trip, or hire a ride instantly.
+                Choose your path below.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+                <a href="vehicles.html" style="background: #fff; padding: 2rem 1.5rem; border-radius: 20px; text-align: center; border: 2px solid #e2e8f0; transition: 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.02); text-decoration: none; color: inherit; display: block;">
+                    <div style="font-size: 3rem; color: #0f9d58; margin-bottom: 0.5rem;"><i class="fas fa-car"></i></div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #0f172a;">Buy</h3>
+                    <p style="color: #64748b; font-size: 0.95rem; margin: 0.3rem 0 1rem;">Find quality used &amp; new vehicles from verified sellers.</p>
+                    <span style="display: inline-block; background: #0f9d58; color: #fff; padding: 0.5rem 2rem; border-radius: 50px; font-weight: 600; font-size: 0.9rem;">Browse Vehicles →</span>
+                </a>
+                <a href="rentals.html" style="background: #fff; padding: 2rem 1.5rem; border-radius: 20px; text-align: center; border: 2px solid #e2e8f0; transition: 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.02); text-decoration: none; color: inherit; display: block;">
+                    <div style="font-size: 3rem; color: #fbbc05; margin-bottom: 0.5rem;"><i class="fas fa-calendar-check"></i></div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #0f172a;">Rent</h3>
+                    <p style="color: #64748b; font-size: 0.95rem; margin: 0.3rem 0 1rem;">Daily, weekly, or monthly rentals. Flexible and affordable.</p>
+                    <span style="display: inline-block; background: #fbbc05; color: #0f172a; padding: 0.5rem 2rem; border-radius: 50px; font-weight: 600; font-size: 0.9rem;">Browse Rentals →</span>
+                </a>
+                <a href="hire.html" style="background: #fff; padding: 2rem 1.5rem; border-radius: 20px; text-align: center; border: 2px solid #e2e8f0; transition: 0.3s; box-shadow: 0 4px 12px rgba(0,0,0,0.02); text-decoration: none; color: inherit; display: block;">
+                    <div style="font-size: 3rem; color: #2563eb; margin-bottom: 0.5rem;"><i class="fas fa-taxi"></i></div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #0f172a;">Hire</h3>
+                    <p style="color: #64748b; font-size: 0.95rem; margin: 0.3rem 0 1rem;">Get a professional driver for business, travel, or any occasion.</p>
+                    <span style="display: inline-block; background: #2563eb; color: #fff; padding: 0.5rem 2rem; border-radius: 50px; font-weight: 600; font-size: 0.9rem;">Book a Ride →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories" style="padding: 2rem 0 3rem; background: #f8fafc;">
+        <div class="container">
+            <h2 class="section-title">Popular Categories</h2>
+            <p class="section-subtitle">Explore vehicles by type</p>
+            <div class="category-grid">
+                <div class="category-item"><i class="fas fa-car"></i><h4>Cars</h4></div>
+                <div class="category-item"><i class="fas fa-motorcycle"></i><h4>Motorcycles</h4></div>
+                <div class="category-item"><i class="fas fa-truck"></i><h4>Vans &amp; Trucks</h4></div>
+                <div class="category-item"><i class="fas fa-tractor"></i><h4>Three-Wheelers</h4></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" style="padding: 2rem 0 4rem;">
+        <div class="container">
+            <h2 class="section-title">Featured Listings</h2>
+            <p class="section-subtitle">Trusted sellers across Sri Lanka</p>
+            <div class="listing-grid">
+                <div class="listing-card">
+                    <img src="img/toyotavista.jpg" alt="Toyota Vitz" />
+                    <div class="listing-body">
+                        <h3>Toyota Vitz 2020</h3>
+                        <div class="price">Rs. 4,250,000</div>
+                        <div class="meta"><span><i class="fas fa-road"></i> 45,000 km</span><span><i class="fas fa-calendar"></i> 2020</span></div>
+                        <div class="seller">
+                            <img src="img/nuwan.jpg" alt="seller" />
+                            <span>Nuwan Perera</span>
+                            <span class="badge"><i class="fas fa-check-circle" style="color:#0f9d58;"></i> Verified</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-green" style="margin-top:0.5rem;"><i class="fas fa-phone"></i> Call Seller</a>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="img/hondacrv2.jpg" alt="Honda CR-V" />
+                    <div class="listing-body">
+                        <h3>Honda CR-V 2022</h3>
+                        <div class="price">Rs. 8,750,000</div>
+                        <div class="meta"><span><i class="fas fa-road"></i> 28,000 km</span><span><i class="fas fa-calendar"></i> 2022</span></div>
+                        <div class="seller">
+                            <img src="img/shanika.jpg" alt="seller" />
+                            <span>Shanika Fernando</span>
+                            <span class="badge"><i class="fas fa-check-circle" style="color:#0f9d58;"></i> Verified</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-green" style="margin-top:0.5rem;"><i class="fas fa-phone"></i> Call Seller</a>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="img/fordranger.jpg" alt="Ford Ranger" />
+                    <div class="listing-body">
+                        <h3>Ford Ranger 2021</h3>
+                        <div class="price">Rs. 12,500,000</div>
+                        <div class="meta"><span><i class="fas fa-road"></i> 32,000 km</span><span><i class="fas fa-calendar"></i> 2021</span></div>
+                        <div class="seller">
+                            <img src="img/lasitha.jpg" alt="seller" />
+                            <span>Lasitha Rathnayake</span>
+                            <span class="badge"><i class="fas fa-check-circle" style="color:#0f9d58;"></i> Verified</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-green" style="margin-top:0.5rem;"><i class="fas fa-phone"></i> Call Seller</a>
+                    </div>
+                </div>
+                <div class="listing-card">
+                    <img src="img/suzuki2.jpeg" alt="Suzuki Swift" />
+                    <div class="listing-body">
+                        <h3>Suzuki Swift 2023</h3>
+                        <div class="price">Rs. 3,850,000</div>
+                        <div class="meta"><span><i class="fas fa-road"></i> 18,000 km</span><span><i class="fas fa-calendar"></i> 2023</span></div>
+                        <div class="seller">
+                            <img src="img/maduri.webp" alt="seller" />
+                            <span>Madhuri Silva</span>
+                            <span class="badge"><i class="fas fa-check-circle" style="color:#0f9d58;"></i> Verified</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-green" style="margin-top:0.5rem;"><i class="fas fa-phone"></i> Call Seller</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4><i class="fas fa-car" style="color:#0f9d58;"></i> Vahana.lk</h4>
+                    <p>Your trusted vehicle marketplace in Sri Lanka. Buy, rent, or hire with confidence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="vehicles.html">Buy Vehicles</a></li>
+                        <li><a href="rentals.html">Rentals</a></li>
+                        <li><a href="hire.html">Hire a Ride</a></li>
+                        <li><a href="#">Post Ad</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone" style="color:#0f9d58; width:1.5rem;"></i> +94 77 123 4567</li>
+                        <li><i class="fas fa-envelope" style="color:#0f9d58; width:1.5rem;"></i> hello@vahana.lk</li>
+                        <li><i class="fas fa-map-marker-alt" style="color:#0f9d58; width:1.5rem;"></i> Colombo, Sri Lanka</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vahana.lk. All rights reserved. Built with <i class="fas fa-heart"></i> for Sri Lankan drivers.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

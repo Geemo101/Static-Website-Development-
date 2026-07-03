@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>Hire a Ride — Vahana.lk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <div class="logo"><a href="index.html"><i class="fas fa-car"></i> Vahana<span>.lk</span></a></div>
+            <nav class="main-nav" id="mainNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Buy</a></li>
+                    <li><a href="rentals.html">Rent</a></li>
+                    <li><a href="hire.html" class="active">Hire</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" class="nav-cta"><i class="fas fa-user"></i> Sign In</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>Book a Ride <i class="fas fa-taxi" style="color:#fbbc05;"></i></h1>
+            <p>Reliable, safe, and affordable rides across Sri Lanka. Choose your ride below.</p>
+        </div>
+    </section>
+
+    <section class="hire-section">
+        <div class="container">
+            <div class="ride-booking-card">
+                <h2><i class="fas fa-map-pin" style="color:#0f9d58;"></i> Where to?</h2>
+                <div class="ride-input-group">
+                    <input type="text" placeholder="📍 Pickup Location" value="Colombo Fort" />
+                    <input type="text" placeholder="🏁 Drop-off Location" value="Bambalapitiya" />
+                </div>
+                <h4 style="margin-bottom: 0.5rem; color:#475569;">Select your ride</h4>
+                <div class="ride-options">
+                    <div class="ride-option selected">
+                        <i class="fas fa-motorcycle" style="color:#fbbc05;"></i>
+                        <h4>TukTuk</h4>
+                        <div class="fare">Rs. 150</div>
+                    </div>
+                    <div class="ride-option">
+                        <i class="fas fa-car" style="color:#0f9d58;"></i>
+                        <h4>Car</h4>
+                        <div class="fare">Rs. 350</div>
+                    </div>
+                    <div class="ride-option">
+                        <i class="fas fa-shuttle-van" style="color:#2563eb;"></i>
+                        <h4>Van</h4>
+                        <div class="fare">Rs. 600</div>
+                    </div>
+                </div>
+                <button id="bookRideBtn" class="btn btn-primary" style="width:100%; padding:1rem; font-size:1.2rem;">
+                    <i class="fas fa-play"></i> Find a Ride
+                </button>
+                <div id="driverMock" class="driver-mock">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Driver" />
+                    <div class="info">
+                        <h4>🚗 Driver is nearby!</h4>
+                        <p>Estimated fare: Rs. 150 • Arriving in 3 mins</p>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align:center; color:#64748b; font-size:0.9rem;">
+                <i class="fas fa-shield-alt" style="color:#0f9d58;"></i> Safe rides • Trained drivers • 24/7 support
+            </p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><h4><i class="fas fa-car" style="color:#0f9d58;"></i> Vahana.lk</h4><p>Your trusted vehicle marketplace in Sri Lanka.</p><div class="social-links"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></div></div>
+                <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="vehicles.html">Buy Vehicles</a></li><li><a href="rentals.html">Rentals</a></li><li><a href="hire.html">Hire a Ride</a></li><li><a href="#">Post Ad</a></li></ul></div>
+                <div class="footer-col"><h4>Support</h4><ul><li><a href="#">FAQ</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></div>
+                <div class="footer-col"><h4>Contact</h4><ul><li><i class="fas fa-phone" style="color:#0f9d58;width:1.5rem;"></i> +94 77 123 4567</li><li><i class="fas fa-envelope" style="color:#0f9d58;width:1.5rem;"></i> hello@vahana.lk</li><li><i class="fas fa-map-marker-alt" style="color:#0f9d58;width:1.5rem;"></i> Colombo, SL</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Vahana.lk. All rights reserved. Built with <i class="fas fa-heart"></i> for Sri Lankan drivers.</p></div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
