@@ -224,3 +224,170 @@ input:focus,textarea:focus,select:focus,.search-box input:focus,.search-box sele
 .emi-vs-rent{margin-top:1rem;padding:1rem 1.2rem;background:#eff6ff;border-radius:14px;border:1px solid #bfdbfe;font-size:.85rem;color:#1e3a8a}
 .emi-vs-rent strong{color:#1d4ed8}
 @media(max-width:768px){.emi-breakdown{grid-template-columns:1fr}}
+/* ----- Mobile Navigation (Right Drawer) ----- */
+@media (max-width: 768px) {
+  /* Toggle button – always on the right */
+  .nav-toggle {
+    display: block;
+    order: 2; /* pushes it to the right if parent uses flex */
+    margin-left: auto;
+  }
+
+  /* Overlay – full screen backdrop */
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 104;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .nav-overlay.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Drawer – slides from right */
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;
+    max-width: 80vw;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 105;
+    padding: 1.5rem 1.5rem 2rem;
+    box-shadow: -8px 0 40px rgba(0, 0, 0, 0.15);
+    transform: translateX(105%);
+    transition: transform 0.35s cubic-bezier(0.2, 0.9, 0.3, 1);
+    overflow-y: auto;
+    display: block !important;
+    max-height: none !important;
+  }
+  .main-nav.open {
+    transform: translateX(0);
+  }
+
+  /* Drawer header with close button */
+  .nav-drawer-header {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--border);
+    margin-bottom: 0.5rem;
+  }
+  .nav-drawer-header .logo-sm {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--green);
+  }
+  .nav-drawer-header .logo-sm span {
+    color: var(--gold);
+  }
+  .nav-close {
+    background: var(--bg-light);
+    border: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    color: var(--gray);
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-close:hover {
+    background: #fee2e2;
+    color: #991b1b;
+  }
+
+  /* Navigation links – stacked vertically */
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+  .main-nav ul li {
+    width: 100%;
+  }
+  .main-nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+    color: var(--dark);
+    font-weight: 500;
+  }
+  .main-nav ul li a:hover,
+  .main-nav ul li a.active {
+    border-bottom-color: var(--gold);
+    color: var(--green);
+  }
+  .main-nav ul li a.nav-cta {
+    background: var(--green);
+    color: #fff !important;
+    padding: 0.7rem 1.5rem !important;
+    border-radius: 50px;
+    border-bottom: none !important;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .main-nav ul li a.nav-cta:hover {
+    background: #0b7e46;
+  }
+}
+
+/* Hide drawer‑only elements on desktop */
+@media (min-width: 769px) {
+  .nav-overlay {
+    display: none !important;
+  }
+  .nav-close {
+    display: none !important;
+  }
+  .nav-drawer-header {
+    display: none !important;
+  }
+  .main-nav {
+    position: static !important;
+    transform: none !important;
+    width: auto !important;
+    height: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  .main-nav ul {
+    flex-direction: row !important;
+    gap: 2rem !important;
+  }
+  .main-nav ul li a {
+    padding: 0.4rem 0 !important;
+    border-bottom: 3px solid transparent !important;
+    font-size: 0.95rem !important;
+    color: var(--gray) !important;
+  }
+  .main-nav ul li a:hover,
+  .main-nav ul li a.active {
+    border-bottom-color: var(--gold) !important;
+    color: var(--dark) !important;
+  }
+  .main-nav ul li a.nav-cta {
+    background: var(--green) !important;
+    color: #fff !important;
+    padding: 0.5rem 1.2rem !important;
+    border-radius: 50px;
+    border-bottom: none !important;
+  }
+}
