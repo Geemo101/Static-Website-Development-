@@ -1,30 +1,51 @@
-// ===== Mobile Navigation Toggle =====
+// ===== Mobile Navigation (Right Drawer) =====
 const navToggle = document.getElementById('navToggle');
 const mainNav = document.getElementById('mainNav');
+const navOverlay = document.getElementById('navOverlay');
+const navClose = document.getElementById('navClose');
 
-if (navToggle && mainNav) {
-    navToggle.addEventListener('click', function() {
-        mainNav.classList.toggle('open');
-        const icon = this.querySelector('i');
-        if (icon) {
-            icon.classList.toggle('fa-bars');
-            icon.classList.toggle('fa-times');
+function openNav() {
+    if (mainNav) mainNav.classList.add('open');
+    if (navOverlay) navOverlay.classList.add('open');
+    const icon = navToggle?.querySelector('i');
+    if (icon) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+    }
+}
+
+function closeNav() {
+    if (mainNav) mainNav.classList.remove('open');
+    if (navOverlay) navOverlay.classList.remove('open');
+    const icon = navToggle?.querySelector('i');
+    if (icon) {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+    }
+}
+
+if (navToggle) {
+    navToggle.addEventListener('click', function(e) {
+        e.stopPropagation();
+        if (mainNav?.classList.contains('open')) {
+            closeNav();
+        } else {
+            openNav();
         }
     });
 }
 
-// ===== Close mobile nav on link click =====
+if (navClose) {
+    navClose.addEventListener('click', closeNav);
+}
+
+if (navOverlay) {
+    navOverlay.addEventListener('click', closeNav);
+}
+
+// Close drawer when any nav link is clicked
 document.querySelectorAll('.main-nav a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (mainNav && mainNav.classList.contains('open')) {
-            mainNav.classList.remove('open');
-            const icon = navToggle?.querySelector('i');
-            if (icon) {
-                icon.classList.remove('fa-times');
-                icon.classList.add('fa-bars');
-            }
-        }
-    });
+    link.addEventListener('click', closeNav);
 });
 
 // ===== Ride Booking Simulation (PickMe Style) =====
