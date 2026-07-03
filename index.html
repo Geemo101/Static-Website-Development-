@@ -12,25 +12,45 @@
 </head>
 <body>
 
-    <header class="site-header" id="siteHeader">
-        <div class="container header-container">
-            <div class="logo">
-                <a href="index.html"><i class="fas fa-car"></i> Vahana<span>.lk</span></a>
-            </div>
-            <nav class="main-nav" id="mainNav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="vehicles.html">Buy</a></li>
-                    <li><a href="rentals.html">Rent</a></li>
-                    <li><a href="hire.html">Hire</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="#" class="nav-cta"><i class="fas fa-user"></i> Sign In</a></li>
-                </ul>
-            </nav>
-            <button class="nav-toggle" id="navToggle"><i class="fas fa-bars"></i></button>
-        </div>
-    </header>
+<header class="site-header" id="siteHeader">
+  <div class="container header-container">
+    <!-- Logo (left) -->
+    <div class="logo">
+      <a href="index.html"><i class="fas fa-car"></i> Vahana<span>.lk</span></a>
+    </div>
+
+    <!-- Toggle button (right) – placed before nav for proper flex order -->
+    <button class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation drawer (slides in from right) -->
+    <nav class="main-nav" id="mainNav">
+      <!-- Drawer header with close button -->
+      <div class="nav-drawer-header">
+        <i class="fas fa-car"></i>
+        <span class="logo-sm">Vahana<span>.lk</span></span>
+        <div style="flex:1;"></div>
+        <button class="nav-close" id="navClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <!-- Navigation links -->
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="vehicles.html">Buy</a></li>
+        <li><a href="rentals.html">Rent</a></li>
+        <li><a href="hire.html">Hire</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#" class="nav-cta"><i class="fas fa-user"></i> Sign In</a></li>
+      </ul>
+    </nav>
+
+    <!-- Overlay (hidden by default) -->
+    <div class="nav-overlay" id="navOverlay"></div>
+  </div>
+</header>
 
     <section class="hero" style="padding: 3rem 0 4rem;">
         <div class="container hero-content">
